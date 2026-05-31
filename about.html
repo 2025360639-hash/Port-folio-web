@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Biodata Saya</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-image: url("sky-2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            padding-top: 80px;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 8px;
+        }
+
+        .navbar ul li a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border: 1px solid white;
+            border-radius: 6px;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .navbar ul li a:hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        /* HEADER */
+        header {
+            background-color: black;
+            margin: 5px 40px;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-content img {
+            width: 90px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .header-text h1 {
+            color: white;
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .header-text p {
+            color: white;
+            margin: 5px 0 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        /* MAIN BOX */
+        main {
+            margin: 80px 40px 40px 40px;
+            padding: 35px;
+            background-color: rgba(0,0,0,0.6);
+            border-radius: 20px;
+            color: white;
+        }
+
+        h2 {
+            color: #D8C3A5;
+        }
+
+        .achievement, .hobby {
+            background: rgba(255,255,255,0.12);
+            padding: 18px;
+            border-radius: 15px;
+            margin-top: 15px;
+            border-left: 5px solid #D8C3A5;
+        }
+
+        .achievement h3, .hobby h3 {
+            color: #D8C3A5;
+        }
+
+        /* GALLERY */
+        .gallery {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid white;
+            margin: 10px;
+        }
+
+        /* VIDEO */
+        .video-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .video-section video {
+            width: 80%;
+            border-radius: 15px;
+            border: 3px solid white;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 3px solid white;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE */
+        @media screen and (max-width:768px) {
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            main {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .navbar ul li {
+                display: block;
+                margin: 6px 0;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+            }
+
+            .video-section video {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills & Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <div class="header-content">
+        <img src="raya.jpeg" alt="Profile Image">
+        <div class="header-text">
+            <h1>About Me</h1>
+            <p>MOHD AFIQ DANIAL BIN ABDUL HALIM</p>
+        </div>
+    </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <section>
+        <h2>Professional Background</h2>
+        <p>
+            I am a Technician currently working at SIRIM Berhad with experience in CCTV systems,
+            access control, barrier gates, and technical support for AV systems.
+        </p>
+    </section>
+
+    <section>
+        <h2>Achievement & Recognition</h2>
+
+        <div class="achievement">
+            <h3>ALEAD Program Winner (SIRIM Berhad)</h3>
+            <p>Leadership, teamwork, and continuous improvement achievement.</p>
+        </div>
+
+        <div class="achievement">
+            <h3>Football Tournament Champion (MITI)</h3>
+            <p>Won inter-agency football tournament showing teamwork and discipline.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Hobbies</h2>
+
+        <div class="hobby">
+            <h3>Hiking</h3>
+            <p>Outdoor hiking for fitness and mental health.</p>
+        </div>
+
+        <div class="hobby">
+            <h3>Running</h3>
+            <p>Participate in running events and marathons.</p>
+        </div>
+
+        <div class="hobby">
+            <h3>Outdoor Activities</h3>
+            <p>Adventure sports and team-based activities.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Gallery</h2>
+
+        <div class="gallery">
+            <img src="hutan.jpeg" alt="Hiking">
+            <img src="lari-1.jpeg" alt="Running">
+            <img src="lasak-1.jpeg" alt="Outdoor Activity">
+        </div>
+    </section>
+
+    <section>
+        <h2>Video</h2>
+
+        <div class="video-section">
+            <video controls>
+                <source src="video-hiking.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    Afiq Danial Portfolio Website © 2026
+</footer>
+
+</body>
+</html>
